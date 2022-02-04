@@ -1,0 +1,395 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(223, 210, 210);
+}
+
+/* NAVEGADOR CON FLEXBOX */
+.menuNavegador{
+    color: white;
+    background-color: black;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.navegador{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+/* NAVEGADOR CON FLEXBOX */
+
+/* IMAGENES */
+.seccionImg{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(2, 4fr);
+    grid-template-areas:
+    "foto1 foto2 foto3"
+    "foto4 foto5 foto6";
+    grid-column-gap: 10px;
+    grid-row-gap: 60px;
+    justify-items: center;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+}
+
+.foto1{
+    grid-area: foto1;
+    height: 400px;
+    width: 400px;
+}
+.foto2{
+    grid-area: foto2;
+    height: 400px;
+    width: 400px;
+}
+.foto3{
+    grid-area: foto3;
+    height: 400px;
+    width: 400px;
+}
+.foto4{
+    grid-area: foto4;
+    height: 400px;
+    width: 400px;
+}
+.foto5{
+    grid-area: foto5;
+    height: 400px;
+    width: 400px;
+}
+.foto6{
+    grid-area: foto6;
+    height: 400px;
+    width: 400px;
+}
+
+.seccionImg2{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(2, 4fr);
+    grid-template-areas:
+    "foto7 foto8 foto9"
+    "foto10 foto11 foto12";
+    grid-column-gap: 10px;
+    grid-row-gap: 60px;
+    justify-items: center;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+}
+
+.foto7{
+    grid-area: foto7;
+    height: 400px;
+    width: 400px;
+}
+.foto8{
+    grid-area: foto8;
+    height: 400px;
+    width: 400px;
+}
+.foto9{
+    grid-area: foto9;
+    height: 400px;
+    width: 400px;
+}
+.foto10{
+    grid-area: foto10;
+    height: 400px;
+    width: 400px;
+}
+.foto11{
+    grid-area: foto11;
+    height: 400px;
+    width: 400px;
+}
+.foto12{
+    grid-area: foto12;
+    height: 400px;
+    width: 400px;
+}
+/* IMAGENES */
+
+/* NAVEGADOR Y FOOTER */
+a { 
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+/* NAVEGADOR Y FOOTER */
+
+/* TITULOS */
+h1{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-top: 20px;
+    font-style: oblique;
+}
+
+h2{
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    font-style: italic;
+    background-color: violet;
+    width: 200px;
+    margin: 10px;
+}
+
+h3{
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+}
+
+h4{
+    font-size: 22px;
+    padding-bottom: 5px;
+}
+/* TITULOS */
+
+/* SUCURSALES */
+.seccionSucursales{
+    display: grid;
+    grid-template-columns: repeat(1fr 2fr);
+    grid-template-rows: repeat(3, 4fr);
+    grid-template-areas:
+    "palermo mapapalermo"
+    "ramos maparamos"
+    "necochea mapanecochea";
+    grid-column-gap: 10px;
+    grid-row-gap: 60px;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.mapaPalermo{
+    grid-area: mapapalermo;
+    height: 400px;
+    width: 400px;
+}
+.palermo{
+    grid-area: palermo;
+}
+
+.mapaRamos{
+    grid-area: maparamos;
+    height: 400px;
+    width: 400px;
+}
+.ramos{
+    grid-area: ramos;
+}
+
+.mapaNecochea{
+    grid-area: mapanecochea;
+    height: 400px;
+    width: 400px;
+}
+.necochea{
+    grid-area: necochea;
+}
+/* SUCURSALES */
+
+/* QUIENES SOMOS */
+.seccionNosotros{
+    display: grid;
+    grid-template-columns: repeat(2fr 1fr);
+    grid-template-rows: repeat(3, 4fr);
+    grid-template-areas:
+    "thomas texto1"
+    "alejandro texto2"
+    "lucia texto3";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.thomas{
+    grid-area: thomas;
+    height: 400px;
+    width: 400px;
+}
+.texto1{
+    grid-area: texto1;
+}
+
+.alejandro{
+    grid-area: alejandro;
+    height: 400px;
+    width: 400px;
+}
+.texto2{
+    grid-area: texto2;
+}
+
+.lucia{
+    grid-area: lucia;
+    height: 400px;
+    width: 400px;
+}
+.texto3{
+    grid-area: texto3;
+}
+/* QUIENES SOMOS */
+
+
+/* FOOTER*/
+.menuFooter{
+    background-color: black;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+/* FOOTER */
+
+
+/* MEDIA QUARIES */
+@media only screen and (max-width: 480px) {
+    .menuNavegador{
+        background-color: yellow;
+    }
+    
+    a{
+        color: black;
+    }
+
+    .menuFooter{
+        background-color: yellow;
+    }
+
+    h1{
+        background-color: yellow;
+        color: black;
+    }
+
+    .seccionImg{
+        display: grid;
+        grid-template-columns: repeat(2fr);
+        grid-template-rows: repeat(6, 4fr);
+        grid-template-areas:
+        "foto1"
+        "foto2"
+        "foto3"
+        "foto4"
+        "foto5"
+        "foto6";
+        grid-row-gap: 60px;
+        justify-items: center;
+        align-items: center;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .seccionImg2{
+        display: grid;
+        grid-template-columns: repeat(2fr);
+        grid-template-rows: repeat(6, 4fr);
+        grid-template-areas:
+        "foto7"
+        "foto8"
+        "foto9"
+        "foto10"
+        "foto11"
+        "foto12";
+        grid-row-gap: 60px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    h2{
+        background-color: blanchedalmond;
+    }
+
+    .seccionSucursales{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-template-rows: repeat(6, 2fr);
+        grid-template-areas:
+        "palermo"
+        "mapapalermo"
+        "ramos"
+        "maparamos"
+        "necochea"
+        "mapanecochea";
+        grid-column-gap: 10px;
+        grid-row-gap: 60px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .seccionNosotros{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+        "thomas"
+        "texto1"
+        "alejandro"
+        "texto2"
+        "lucia"
+        "texto3";
+        grid-row-gap: 10px;
+        justify-items: center;
+        align-items: center;
+    }
+
+}
+
+/* MEDIA QUARIES */
+
+/* CENTRO DE AYUDA */
+.menuAyuda{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 4fr 4fr;
+    grid-template-areas:
+    "titulo titulo titulo" 
+    "box1 box2 box3";
+}
+
+.box{
+    border-radius: 8px;
+    height: 80px;
+    width: 250px;
+    margin: 60px auto;
+    color: white;
+    box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.6);
+    -moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.6);
+    margin-top: auto;
+    margin-bottom: 295px;
+}
+
+.box1{
+    background-color: black;
+    grid-area: box1;
+}
+
+.box2{
+    background-color: black;
+    grid-area: box2;
+}
+
+.box3{
+    background-color: black;
+    grid-area: box3;
+}
+
+.titulo{
+    grid-area: titulo;
+}
