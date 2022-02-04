@@ -362,34 +362,93 @@ h4{
     "box1 box2 box3";
 }
 
-.box{
-    border-radius: 8px;
-    height: 80px;
-    width: 250px;
-    margin: 60px auto;
-    color: white;
-    box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.6);
-    -webkit-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.6);
-    -moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.6);
-    margin-top: auto;
-    margin-bottom: 295px;
+/* ANIMACION CONTENIDO */
+.social-media ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 560px;
 }
 
-.box1{
-    background-color: black;
-    grid-area: box1;
+.social-media ul li{
+    list-style-type: none;
+    margin: 0 15px;
 }
 
-.box2{
-    background-color: black;
-    grid-area: box2;
+.social-media ul li .fab{
+    font-size: 30px;
+    line-height: 60px;
+    transition: 0.6s;
+    color: #fff;
 }
 
-.box3{
-    background-color: black;
-    grid-area: box3;
+.social-media ul li a{
+    display: block;
+    border-radius: 5px;
+    width: 150px;
+    height: 60px;
+    position: relative;
+    background-color: #000;
+    text-align: center;
+    box-shadow: 0 05px 4px rgba(153, 181, 145, 0.3);
 }
 
-.titulo{
-    grid-area: titulo;
+.social-media ul li .fab:hover{
+    color: #fff;
 }
+.social-media ul li a:hover{
+    transform: translate(0, -15%);
+    transition: 0.5s;
+}
+
+.social-media ul li:nth-child(1) a:hover{
+    background-color: #e4405f;
+}
+.social-media ul li:nth-child(2) a:hover{
+    background-color: #e4405f;
+}
+.social-media ul li:nth-child(3) a:hover{
+    background-color: #e4405f;
+}
+.social-media ul li:nth-child(4) a:hover{
+    background-color: #e4405f;
+}
+
+/* ANIMACION CONTENIDO */
+
+/*prueba*/
+.flip-in-hor-top {
+	-webkit-animation: flip-in-hor-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: flip-in-hor-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes flip-in-hor-top {
+    0% {
+      -webkit-transform: rotateX(-80deg);
+              transform: rotateX(-80deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes flip-in-hor-top {
+    0% {
+      -webkit-transform: rotateX(-80deg);
+              transform: rotateX(-80deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+      opacity: 1;
+    }
+  }
+  
