@@ -49,31 +49,141 @@
           </nav>
     </header>
 
-
-
-    <h2>ROPA DESTACADA DE VERANO</h2>
-    <section class="seccionImg">
-            <div class="flip-in-hor-top"><img class="foto1" src="./imagenes/bermudaverano.jpg" alt="bermudaverano"></div>
-            <div class="flip-in-hor-top"><img class="foto2" src="./imagenes/remeraamarilla.jpg" alt="remeraamarilla"></div>
-            <div class="flip-in-hor-top"><img class="foto3" src="./imagenes/remerablanca.jpg" alt="remerablanca"></div>
-            <div class="flip-in-hor-top"><img class="foto4" src="./imagenes/remerapeace.jpg" alt="remerapeace"></div>
-            <div class="flip-in-hor-top"><img class="foto5" src="./imagenes/remerasmile.jpg" alt="remerasmile"></div>
-            <div class="flip-in-hor-top"><img class="foto6" src="./imagenes/conjuntoinvierno.jpg" alt="conjuntoinvierno"></div>
-    </section>
-
-
-    <form>
-        <div class="mb-3 formulario">
-          <label for="exampleInputEmail1" class="form-label">Dirección de Email</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">Nunca compartiremos su correo con nadie.</div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./imagenes/Portadas/portada1.jpg" class="d-block w-100" alt="portada">
         </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Acepto recibir un newsletter semanal.</label>
+        <div class="carousel-item">
+          <img src="./imagenes/Portadas/portada2.jpg" class="d-block w-100" alt="portada">
         </div>
-        <button type="submit" class="btn btn-primary">Aceptar</button>
-      </form>
+        <div class="carousel-item">
+          <img src="./imagenes/Portadas/portada3.jpg" class="d-block w-100" alt="portada">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <section class="py-5">
+      <div class="container px-4 px-lg-5 mt-5">
+          <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+              <div class="col mb-5">
+                  <div class="card h-100">
+                      <!-- Sale badge-->
+                      <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">DESTACANDO</div>
+                      <!-- Product image-->
+                      <img class="card-img-top" src="./imagenes/Productos/gorrakotk450x300.jpg" alt="gorra" />
+                      <!-- Product details-->
+                      <div class="card-body p-4">
+                          <div class="text-center">
+                              <!-- Product name-->
+                              <h5 class="fw-bolder">Gorra KOTK</h5>
+                              <!-- Product price-->
+                              $1200.00
+                          </div>
+                      </div>
+                      <!-- Product actions-->
+                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                          <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver en catálogo</a></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col mb-5">
+                  <div class="card h-100">
+                      <!-- Sale badge-->
+                      <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">DESTACANDO</div>
+                      <!-- Product image-->
+                      <img class="card-img-top" src="./imagenes/Productos/barbijo450x300.jpg" alt="barbijo" />
+                      <!-- Product details-->
+                      <div class="card-body p-4">
+                          <div class="text-center">
+                              <!-- Product name-->
+                              <h5 class="fw-bolder">Barbijo</h5>
+                              <!-- Product reviews-->
+                              <div class="d-flex justify-content-center small text-warning mb-2">
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                              </div>
+                              <!-- Product price-->
+                              $1200.00
+                          </div>
+                      </div>
+                      <!-- Product actions-->
+                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                          <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver en catálogo</a></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col mb-5">
+                  <div class="card h-100">
+                      <!-- Sale badge-->
+                      <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">DESTACANDO</div>
+                      <!-- Product image-->
+                      <img class="card-img-top" src="./imagenes/Productos/rinonera450x300.jpg" alt="riñonera" />
+                      <!-- Product details-->
+                      <div class="card-body p-4">
+                          <div class="text-center">
+                              <!-- Product name-->
+                              <h5 class="fw-bolder">Riñonera</h5>
+                              <!-- Product price-->
+                              $1500.00
+                          </div>
+                      </div>
+                      <!-- Product actions-->
+                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                          <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver en catálogo</a></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col mb-5">
+                  <div class="card h-100">
+                    <!-- Sale badge-->
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">DESTACANDO</div>
+                      <!-- Product image-->
+                      <img class="card-img-top" src="./imagenes/Productos/lentesdesol450x300.jpg" alt="lentes" />
+                      <!-- Product details-->
+                      <div class="card-body p-4">
+                          <div class="text-center">
+                              <!-- Product name-->
+                              <h5 class="fw-bolder">Lentes de sol</h5>
+                              <!-- Product reviews-->
+                              <div class="d-flex justify-content-center small text-warning mb-2">
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                              </div>
+                              <!-- Product price-->
+                              $1000.00
+                          </div>
+                      </div>
+                      <!-- Product actions-->
+                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                          <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver en catálogo</a></div>
+                      </div>
+                  </div>
+              </div>
+      </div>
+  </section>
+
+
 
 
     <footer class="menuFooter">
