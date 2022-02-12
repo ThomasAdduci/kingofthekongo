@@ -1,4 +1,4 @@
-/* ANIMACION CONTENIDO */
+/* ANIMACION CONTENIDO
 .social-media ul{
     position: relative;
     margin: 0;
@@ -56,8 +56,64 @@
     background-color: yellow;
 }
 
-/* ANIMACION CONTENIDO */
+ ANIMACION CONTENIDO */
+
+.ayuda1{
+    background-color: map-get($estilos, color);
+    text-align: map-get($estilos, centro);
+    color: map-get($estilos, cFuente);
+    padding: map-get($estilos, 1rem);
+    font-size: map-get($estilos, tFuente);
+}
+
+.ayuda2{
+    background-color: map-get($estilos2, color);
+    text-align: map-get($estilos, centro);
+    color: map-get($estilos2, cFuente);
+    padding: map-get($estilos, 1rem);
+    font-size: map-get($estilos, tFuente);    
+}
+
+.masInfo {
+    border: 1px black solid;
+    background-color: yellowgreen;
+}
+
+.masInfo--nueva{
+    @extend.masInfo;
+    font-size: 30px;
+    width: 500px;
+    text-align: map-get($estilos, centro);
+    padding: map-get($estilos, 1rem);
+    margin-top: 20px;
+}
+
+.red {
+    border: 1px black solid;
+    background-color: red;
+    font-size: 30px;
+    text-align: map-get($estilos, centro);
+    display: flex;
+    justify-content: center;
+}
+
+.red--fb{
+    @extend.red;
+    background-color: blue;
+}
+
+.red--tw{
+    @extend.red;
+    background-color: violet;
+    margin-bottom: 20px;
+}
+
+@mixin sizes($width, $height){
+    height: $height;
+    width: $width;
+}
 
 .formulario{
-    width: 300px;
+    @include sizes(500px, 200px);
+    margin-bottom: 40px;
 }

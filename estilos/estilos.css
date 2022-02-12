@@ -184,80 +184,120 @@ a {
 }
 
 /*ANIMACIONES*/
-/* ANIMACION CONTENIDO */
-.social-media ul {
-  position: relative;
-  margin: 0;
-  padding: 0;
+/* ANIMACION CONTENIDO
+.social-media ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 380px;
+}
+
+.social-media ul li{
+    list-style-type: none;
+    margin: 0 15px;
+}
+
+.social-media ul li .fab{
+    font-size: 30px;
+    line-height: 60px;
+    transition: 0.6s;
+    color: #fff;
+}
+
+.social-media ul li a{
+    display: block;
+    border-radius: 5px;
+    width: 150px;
+    height: 60px;
+    position: relative;
+    background-color: #000;
+    text-align: center;
+    box-shadow: 0 05px 4px rgba(153, 181, 145, 0.3);
+}
+
+.social-media ul li .fab:hover{
+    color: #fff;
+}
+.social-media ul li a:hover{
+    transform: translate(0, -15%);
+    transition: 0.5s;
+}
+
+.social-media ul li:nth-child(1) a:hover{
+    background-color: yellow;
+}
+.social-media ul li:nth-child(2) a:hover{
+    background-color: yellow;
+}
+.social-media ul li:nth-child(3) a:hover{
+    background-color: yellow;
+}
+.social-media ul li:nth-child(4) a:hover{
+    background-color: yellow;
+}
+
+ ANIMACION CONTENIDO */
+.ayuda1 {
+  background-color: blue;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  font-size: 35px;
+}
+
+.ayuda2 {
+  background-color: red;
+  text-align: center;
+  color: black;
+  padding: 1rem;
+  font-size: 35px;
+}
+
+.masInfo, .masInfo--nueva {
+  border: 1px black solid;
+  background-color: yellowgreen;
+}
+
+.masInfo--nueva {
+  font-size: 30px;
+  width: 500px;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 20px;
+}
+
+.red, .red--fb, .red--tw {
+  border: 1px black solid;
+  background-color: red;
+  font-size: 30px;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 380px;
 }
 
-.social-media ul li {
-  list-style-type: none;
-  margin: 0 15px;
+.red--fb {
+  background-color: blue;
 }
 
-.social-media ul li .fab {
-  font-size: 30px;
-  line-height: 60px;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-  color: #fff;
+.red--tw {
+  background-color: violet;
+  margin-bottom: 20px;
 }
 
-.social-media ul li a {
-  display: block;
-  border-radius: 5px;
-  width: 150px;
-  height: 60px;
-  position: relative;
-  background-color: #000;
-  text-align: center;
-  -webkit-box-shadow: 0 5px 4px rgba(153, 181, 145, 0.3);
-          box-shadow: 0 5px 4px rgba(153, 181, 145, 0.3);
-}
-
-.social-media ul li .fab:hover {
-  color: #fff;
-}
-
-.social-media ul li a:hover {
-  -webkit-transform: translate(0, -15%);
-          transform: translate(0, -15%);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.social-media ul li:nth-child(1) a:hover {
-  background-color: yellow;
-}
-
-.social-media ul li:nth-child(2) a:hover {
-  background-color: yellow;
-}
-
-.social-media ul li:nth-child(3) a:hover {
-  background-color: yellow;
-}
-
-.social-media ul li:nth-child(4) a:hover {
-  background-color: yellow;
-}
-
-/* ANIMACION CONTENIDO */
 .formulario {
-  width: 300px;
+  height: 200px;
+  width: 500px;
+  margin-bottom: 40px;
 }
 
 /* TITULOS (terminar de arreglar y ubicar)*/
