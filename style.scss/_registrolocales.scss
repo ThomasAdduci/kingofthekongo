@@ -1,5 +1,5 @@
 .localesBody{
-    min-height: 100vh;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -320,6 +320,9 @@
             padding-top: 20px;
             text-align: center;
         }
+        .localesBody{
+            height: 1700px;
+          }
     }
 
     @media (max-width:1045px) {

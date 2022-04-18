@@ -638,7 +638,7 @@ form a:hover {
 }
 
 .localesBody {
-  min-height: 100vh;
+  height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1076,6 +1076,9 @@ form a:hover {
   .titleResponsive {
     padding-top: 20px;
     text-align: center;
+  }
+  .localesBody {
+    height: 1700px;
   }
 }
 
