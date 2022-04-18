@@ -1,5 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu&display=swap");
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +13,7 @@
 }
 
 body {
-  background-color: #f3f0f0;
+  background-color: white;
 }
 
 a {
@@ -19,104 +22,11 @@ a {
   font-size: 20px;
 }
 
-.container1 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr 1fr)[1fr];
-      grid-template-columns: repeat(1fr 1fr 1fr);
-  -ms-grid-rows: ()[1fr];
-      grid-template-rows: repeat(1fr);
-      grid-template-areas: "caja1 caja2 caja3";
-  grid-column-gap: 10px;
-  grid-row-gap: 60px;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 20px;
-}
-
-.container1 caja1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: caja1;
-}
-
-.container1 caja2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: caja2;
-}
-
-.container1 caja3 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: caja3;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-.seccionSucursales {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (2fr)[1fr];
-      grid-template-columns: repeat(1fr 2fr);
-  -ms-grid-rows: (4fr)[3];
-      grid-template-rows: repeat(3, 4fr);
-      grid-template-areas: "palermo mapapalermo" "ramos maparamos" "necochea mapanecochea";
-  grid-column-gap: 10px;
-  grid-row-gap: 60px;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 20px;
-}
-
-.seccionSucursales mapaPalermo {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: mapapalermo;
-  height: 400px;
-  width: 400px;
-}
-
-.seccionSucursales palermo {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: palermo;
-}
-
-.seccionSucursales mapaRamos {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: maparamos;
-  height: 400px;
-  width: 400px;
-}
-
-.seccionSucursales ramos {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: ramos;
-}
-
-.seccionSucursales mapaNecochea {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: mapanecochea;
-  height: 400px;
-  width: 400px;
-}
-
-.seccionSucursales necochea {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: necochea;
+h1 {
+  color: #198754;
+  padding-top: 30px;
+  text-align: center;
+  font-style: italic;
 }
 
 .texto {
@@ -203,7 +113,7 @@ footer {
           justify-content: space-between;
   max-width: 1200px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 .box__footer {
@@ -267,190 +177,23 @@ footer {
   background-color: #7a7a7a;
 }
 
-.seccionNosotros {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2fr];
-      grid-template-columns: repeat(2fr 1fr);
-  -ms-grid-rows: (4fr)[3];
-      grid-template-rows: repeat(3, 4fr);
-      grid-template-areas: "thomas texto1" "alejandro texto2" "lucia texto3";
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.main_div {
+  width: 700px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
 }
 
-.seccionNosotros thomas {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: thomas;
-  height: 400px;
-  width: 400px;
-}
-
-.seccionNosotros texto1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: texto1;
-}
-
-.seccionNosotros alejandro {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: alejandro;
-  height: 400px;
-  width: 400px;
-}
-
-.seccionNosotros texto2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: texto2;
-}
-
-.seccionNosotros lucia {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: lucia;
-  height: 400px;
-  width: 400px;
-}
-
-.seccionNosotros texto3 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: texto3;
-}
-
-/*ANIMACIONES*/
-.flip-in-hor-top {
-  -webkit-animation: flip-in-hor-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: flip-in-hor-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-@-webkit-keyframes flip-in-hor-top {
-  0% {
-    -webkit-transform: rotateX(-80deg);
-    transform: rotateX(-80deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotateX(0);
-    transform: rotateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes flip-in-hor-top {
-  0% {
-    -webkit-transform: rotateX(-80deg);
-    transform: rotateX(-80deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotateX(0);
-    transform: rotateX(0);
-    opacity: 1;
-  }
-}
-
-/*ANIMACIONES*/
-/* ANIMACION CONTENIDO
-.social-media ul{
-    position: relative;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 380px;
-}
-
-.social-media ul li{
-    list-style-type: none;
-    margin: 0 15px;
-}
-
-.social-media ul li .fab{
-    font-size: 30px;
-    line-height: 60px;
-    transition: 0.6s;
-    color: #fff;
-}
-
-.social-media ul li a{
-    display: block;
-    border-radius: 5px;
-    width: 150px;
-    height: 60px;
-    position: relative;
-    background-color: #000;
-    text-align: center;
-    box-shadow: 0 05px 4px rgba(153, 181, 145, 0.3);
-}
-
-.social-media ul li .fab:hover{
-    color: #fff;
-}
-.social-media ul li a:hover{
-    transform: translate(0, -15%);
-    transition: 0.5s;
-}
-
-.social-media ul li:nth-child(1) a:hover{
-    background-color: yellow;
-}
-.social-media ul li:nth-child(2) a:hover{
-    background-color: yellow;
-}
-.social-media ul li:nth-child(3) a:hover{
-    background-color: yellow;
-}
-.social-media ul li:nth-child(4) a:hover{
-    background-color: yellow;
-}
-
- ANIMACION CONTENIDO */
-.ayuda1 {
-  background-color: blue;
+.main_div .title {
   text-align: center;
-  color: white;
-  padding: 1rem;
-  font-size: 35px;
-}
-
-.ayuda2 {
-  background-color: red;
-  text-align: center;
-  color: black;
-  padding: 1rem;
-  font-size: 35px;
-}
-
-.masInfo, .masInfo--nueva {
-  border: 1px black solid;
-  background-color: yellowgreen;
-}
-
-.masInfo--nueva {
   font-size: 30px;
-  width: 500px;
-  text-align: center;
-  padding: 1rem;
+  font-weight: 600;
+}
+
+.main_div .social_icons {
   margin-top: 20px;
-}
-
-.red, .red--fb, .red--tw {
-  border: 1px black solid;
-  background-color: red;
-  font-size: 30px;
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -459,39 +202,258 @@ footer {
           justify-content: center;
 }
 
-.red--fb {
-  background-color: blue;
+.social_icons a {
+  display: block;
+  height: 45px;
+  width: 100%;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
-.red--tw {
-  background-color: violet;
-  margin-bottom: 20px;
+.social_icons a span {
+  margin-left: 5px;
+  font-size: 18px;
 }
 
-.formulario {
-  height: 200px;
-  width: 500px;
-  margin-bottom: 40px;
+.social_icons a:first-child {
+  margin-right: 5px;
+  background: #4267B2;
 }
 
-/* TITULOS (terminar de arreglar y ubicar)*/
-h1 {
+.social_icons a:first-child:hover {
+  background: #375695;
+}
+
+.social_icons a:last-child {
+  margin-left: 5px;
+  background: #f21d1d;
+}
+
+.social_icons a:last-child:hover {
+  background: #d11f1f;
+}
+
+form {
+  margin-top: 25px;
+}
+
+form .input_box {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  margin-top: 15px;
+}
+
+.input_box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 45px;
+  font-size: 17px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.input_box input:focus {
+  border-color: #198754;
+}
+
+.input_box .icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: grey;
+}
+
+form .option_div {
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.option_div .check_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.option_div span {
+  margin-left: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.option_div .forget_div a {
+  font-size: 16px;
   color: #198754;
-  padding-top: 30px;
-  text-align: center;
-  font-style: italic;
 }
 
-h3 {
-  color: violet;
+.button input {
+  padding-left: 0;
+  background: #198754;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.button input:hover {
+  background: #16b96d;
+}
+
+form .sign_up {
   text-align: center;
+  margin-top: 25px;
+}
+
+.sign_up a {
+  color: #198754;
+  font-size: 16px !important;
+}
+
+form a {
+  text-decoration: none;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+.cuerpoRegister {
+  display: -ms-grid;
+  display: grid;
+  height: 1400px;
+  place-items: center;
+  background: #198754;
+}
+
+/* DISEÑO CARDS */
+.containerCard {
+  max-width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 20px;
-  font-size: 35px;
 }
 
-h4 {
+.containerCard .box {
+  width: calc(33% - 10px);
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+
+.box .quote i {
+  margin-top: 10px;
+  font-size: 45px;
+  color: #17c0eb;
+}
+
+.containerCard .box .image {
+  margin: 10px 0;
+  height: 150px;
+  width: 150px;
+  background: #198754;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.box .image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.box p {
+  text-align: justify;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.box .name_job {
+  margin: 10px 0 3px 0;
+  color: #198754;
   font-size: 22px;
-  padding-bottom: 5px;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
-/* TITULOS */
+.shadowBox {
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.51);
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .main_div {
+    width: 365px;
+  }
+  .cuerpoRegister {
+    padding-top: 10px;
+    height: 2200px;
+  }
+  .titleResponsive {
+    padding-top: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1045px) {
+  .containerCard .box {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 710px) {
+  .containerCard .box {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
