@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
 @import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@600&family=Roboto:wght@100&family=Ubuntu&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -20,13 +21,6 @@ a {
   color: white;
   text-decoration: none;
   font-size: 20px;
-}
-
-h1 {
-  color: #198754;
-  padding-top: 30px;
-  text-align: center;
-  font-style: italic;
 }
 
 .texto {
@@ -47,6 +41,69 @@ h1 {
   box-shadow: 1px -1px 18px 11px rgba(0, 0, 0, 0.18);
   -webkit-box-shadow: 1px -1px 18px 11px rgba(0, 0, 0, 0.18);
   -moz-box-shadow: 1px -1px 18px 11px rgba(0, 0, 0, 0.18);
+}
+
+.containerText {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#tituloIndex {
+  font-family: 'Akshar', sans-serif;
+}
+
+.containerImg {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.boxImg {
+  width: 15%;
+  height: 300px;
+  border-radius: 25px;
+  border: #a7a5a5 solid 1px;
+  margin: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  box-shadow: 0px -1px 9px 4px rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0px -1px 9px 4px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0px -1px 9px 4px rgba(0, 0, 0, 0.19);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .boxImg {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .boxImg {
+    width: 90%;
+  }
 }
 
 .separacion {
