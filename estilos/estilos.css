@@ -55,6 +55,7 @@ a {
 .containerImg {
   width: 100%;
   height: auto;
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,7 +71,8 @@ a {
 
 .boxImg {
   width: 15%;
-  height: 300px;
+  height: 250px;
+  background-color: #198754;
   border-radius: 25px;
   border: #a7a5a5 solid 1px;
   margin: 20px;
@@ -79,30 +81,20 @@ a {
   box-shadow: 0px -1px 9px 4px rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 0px -1px 9px 4px rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 0px -1px 9px 4px rgba(0, 0, 0, 0.19);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
+  padding: 10px;
 }
 
 @media (max-width: 1200px) {
   .boxImg {
-    width: 40%;
+    width: 20%;
+    height: 300px;
   }
 }
 
 @media (max-width: 600px) {
   .boxImg {
-    width: 90%;
+    width: 70%;
   }
 }
 
